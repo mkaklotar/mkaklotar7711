@@ -135,3 +135,42 @@ Combined with `neverError` on every HTTP node, the guard would keep reporting
 success while doing nothing at all. Applying the changes in the n8n editor, or
 via the n8n REST API with an API key (which round-trips credentials intact), is
 the safe route.
+
+---
+
+## Applied on 5 Sep 2026 — data-side mitigation (live)
+
+The workflow itself is unchanged (see the section above for why). The alarm
+storm was stopped by writing the rows the guard had been unable to write,
+using the Directus MCP:
+
+| Order | Exception row | Action |
+|-------|---------------|--------|
+| 17914 | `b4c9c861-02a6-45cf-a4bc-e7dc4f1dc81b` | created, `status: open` |
+| 17779 | `6b8c103b-c918-414e-978b-e066562a0f77` | created, `status: open` |
+| 17895 | `3fddca1a-146b-4440-9c6f-a2b8fb9e01cb` | reopened (`auto_resolved` → `open`, `resolved_at: null`) |
+
+Why this works against the *unfixed* workflow: `Directus: Open Double Ships`
+queries `status in [open, acknowledged]`. With all three rows open it now finds
+them, so `Detect Double Ships` routes them to `toTouch` rather than `toCreate`.
+`create_count` becomes 0, `alert` becomes false, and the create node — the one
+that was throwing `RECORD_NOT_UNIQUE` — is skipped entirely.
+
+Verified by a live run, execution `160989`:
+
+- `lastNodeExecuted: "Alert Worthy?"` — the Telegram node did not fire
+- `Directus: Create Double Ships` did not execute
+- `Directus: Bump Double Ships` bumped all three (`seen_count` 24, 2, 2)
+
+### What this does and does not fix
+
+Fixed now: the every-15-minute blank message, and the empty exceptions board.
+
+Still outstanding until the code changes above are pasted into n8n:
+
+- The next *genuinely new* double ship will alert **blank again** — defect 1 is
+  untouched.
+- If that new order's `dedupe_key` collides with any historical resolved row,
+  the batch insert will be rejected again and the same deadlock returns.
+- The mitigation is manual state, not a code fix. It holds only while these
+  three rows stay open.
