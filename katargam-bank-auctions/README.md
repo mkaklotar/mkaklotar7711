@@ -1,77 +1,81 @@
 # Bank Auction Properties: Katargam, Surat
 
-Prepared: 25 Sep 2026. Full data: [`listings.csv`](listings.csv).
+Prepared: 25 Sep 2026. 22 properties. Spreadsheet version: [`listings.csv`](listings.csv).
 
-> **Read this first.** These listings come from public auction aggregators (FindAuction, BAANKNET, eAuctionsIndia, CityAir, BankAuctionDeals) and bank notices. Aggregators often have wrong prices, areas or dates. **Before you pay any EMD, check every number against the bank's own sale notice (SARFAESI Rule 8/9) and the e-auction portal.**
+> **How reliable this is.** The auction websites (FindAuction, BAANKNET, eAuctionsIndia, CityAir, BankAuctionDeals) were blocked from the environment used to make this list. So these details come from search-engine results for those pages and from bank PDF notices, not from reading the pages themselves. Each row has a **Confidence** rating. **Check every figure against the bank's official sale notice before you pay any EMD.**
 
 ---
 
-## 1. Upcoming auctions (as of 25 Sep 2026)
+## A. Upcoming auctions (you can still bid)
 
-| Auction date | Property | Lender | Reserve price | EMD | EMD deadline |
-|---|---|---|---|---|---|
-| **29 Oct 2026** | Flat, 202 Prism Heights, Katargam | ICICI Bank | ₹57.50 L | Verify (10% would be about ₹5.75 L) | 28 Oct 2026 |
-| **29 Oct 2026** | Residential unit(s), about 47 sq.mt, Katargam | ICICI Bank | About ₹13 L to ₹27.6 L (from EMD) | ₹1.30 L to ₹2.76 L | 28 Oct 2026 |
+| # | Auction date | Property & address | Area | Lender | Reserve price | EMD (deadline) | Confidence |
+|---|---|---|---|---|---|---|---|
+| 1 | **29 Oct 2026** | Residential flat, Katargam | 47 sq.mt | ICICI Bank | **₹27.60 L** | ₹2.76 L (28 Oct) | Medium |
+| 2 | 29 Oct 2026 (verify) | Flat 202, **Prism Heights**, Katargam | – | ICICI Bank | **₹57.50 L** | – | Low |
+| 3 | 29 Oct 2026 | Residential, Katargam | – | ICICI Bank | about ₹13 L (from EMD) | ₹1.30 L (28 Oct) | Low |
 
-I could confirm only these ICICI listings as still upcoming. Aggregators show about 23 to 97 Katargam listings in total, but most of the ones I could check were already over.
+**What to do now:** go to ICICI's auction notices page (https://www.icicibank.com/about-us/auction-notices-properties). Search Surat and 29-Oct-2026, download the sale notice, and note the inspection date. ICICI usually runs its e-auctions through the auction portal named in the notice (often eauction.auctiontiger / bankeauctions). Register there **at least a week early**, because you may need a digital signature certificate (DSC) and KYC approval.
 
-## 2. Recent auctions that may be re-auctioned
+## B. 2026 auctions that are over but may come back
 
-If an auction gets no bids, the bank usually re-lists it at a **reserve about 10% lower** within 1 to 3 months. Two of these listings already show this:
+If an auction gets no bids, the bank usually puts the property up again **within 1–3 months at about 10% lower reserve**. Watch these:
 
-- **IDFC FIRST bungalow (Pushpkunj CHS):** ₹2.99 Cr (Apr) → ₹2.70 Cr (Jul). Next round could be about ₹2.4 Cr.
-- **SBI house/flat (Jiya Eco Products):** ₹34 L (Jun) → ₹31 L (Aug), probably the same property. Next round could be about ₹28 L.
+| # | Last auction | Property & address | Area | Lender | Last reserve | EMD |
+|---|---|---|---|---|---|---|
+| 4 | 10 Aug 2026 | **2 flats (one lot):** 501 & 502, Bldg G/2, **Suryam Residency** | 43.7 sq.mt each | SBI | ₹31.00 L | ₹3.10 L |
+| 5 | 30 Jun 2026 | **Individual house (G+1)**, Smruti Co-op Soc, near Gajera Circle, Fulpada Road | Land 50.14 sq.mt (~540 sq ft), built 74.23 sq.mt | SBI | ₹34.00 L | ₹3.40 L |
+| 6 | 07 Aug 2026 | **Shop**, Gopal Plaza, Kuber Nagar | – | Standard Chartered | ₹23.18 L | ₹2.32 L |
+| 7 | 31 Jul 2026 | **Bungalow No. 9, Pushpkunj CHS**, Survey 17/B | 375 sq yd (302 sq.mt) | IDFC FIRST | ₹2.70 Cr (was ₹2.99 Cr) | – |
+| 8 | 30 Jul 2026 | **Office**, Katargam | – | Pegasus ARC | ₹17.86 L | – |
+| 9 | 21 Jul 2026 | **Flat, Laxmi Residency** | – | HDFC Bank | ₹88.55 L | – |
+| 10 | 20 Jul 2026 | Flat, Katargam | – | Piramal Capital | ₹6.03 L | – |
+| 11 | 19 Jul 2026 | **NA plot**, Katargam | – | U GRO Capital | ₹29.00 L | – |
+| 12 | 09 Mar 2026 | **Shop, Silverstone Arcade** | – | Cosmos Bank | ₹33.50 L | – |
+| 13 | 03 Mar 2026 | **Flat, Vasanjipark CHS** | – | Cholamandalam | ₹1.155 Cr | – |
+| 14 | 17 Feb 2026 | **Bungalow, Plot 32, Sant Jalaram Soc**, opp. Pandol Ind. Estate, near Prannath Hospital, Ved Road | 167.14 sq.mt | Bank of Baroda | ₹1.589 Cr | – |
+| 15 | 05 Jan 2026 | Flat, Katargam | – | Bajaj Housing Finance | ₹10.30 L | – |
 
-| Last date | Property | Lender | Last reserve | Why it's worth watching |
+## C. Older or incomplete listings (for reference)
+
+| # | Date | Property & address | Lender | Reserve |
 |---|---|---|---|---|
-| 10 Aug 2026 | Residential flat (Jiya Eco Products) | SBI | ₹31.00 L | Bank has already cut the price once |
-| 07 Aug 2026 | Shop, Gopal Plaza | Standard Chartered | ₹23.18 L | Commercial unit at a low price |
-| 31 Jul 2026 | Bungalow | IDFC FIRST | ₹2.70 Cr | Large property, high-value deal |
-| 30 Jul 2026 | Office | Pegasus ARC | ₹17.86 L | ARC sale. Check dues and litigation |
-| 20 Jul 2026 | Flat | Piramal Capital | ₹6.03 L | Very cheap for Katargam. Could be a tiny unit or have a problem |
-| 19 Jul 2026 | NA plot | U GRO Capital | ₹29.00 L | Land. Check the 7/12 extract and NA order |
-| 30 Jun 2026 | House, 540 sq ft, **physical possession** | SBI | ₹34.00 L | Physical possession, so no eviction fight |
+| 16 | 05 Jul 2025 | Shop B/1 (1000 sq ft), Ganpati Plaza, **Katargam Darwaja** | HDFC Bank | – |
+| 17 | 27 Mar 2025 | Flat A/504, **Suman Sarthak, Dabholi Road** | Bank of India | ₹14.59 L |
+| 18 | 28 Jan 2025 | Flat, Katargam | Bank of Maharashtra | ₹29.50 L |
+| 19 | 16 Jul 2024 | Flat 404, **Shree Ganesh Apt, Shram Nagar Soc**, opp. Akhanand College | Aadhar Housing Finance | ₹5.70 L |
+| 20 | – | Plot 36/A (54.23 sq.mt), **Sant Jalaram Soc, Ved Road** | Bank of India | – |
+| 21 | – | Plot 220 (40.15 sq.mt), **Rahi Township Vibhag-1** | Union Bank of India | – |
+| 22 | – | Flat, **Shantiniketan Apts, Sumul Dairy Road** | ACRE (ARC) | – |
 
-## 3. How to track new Katargam auctions
+Aggregators also list Katargam properties from **Axis Bank, Tata Capital Housing Finance, Svatantra Micro Housing Finance, ICICI (a plot)** and a **DRT** sale. I couldn't find details for these through search.
 
-Check these every week:
+---
 
-1. **BAANKNET** (government portal for PSU banks: SBI, BoB, BoI, Union, PNB): https://baanknet.com → filter Gujarat › Surat, search "Katargam"
+## D. My view
+
+- **Best value for money:** #5, the SBI house at ₹34 L. It's an independent G+1 house with physical possession (the bank already has the keys), on freehold land in a known society near Gajera Circle. Independent houses in Katargam are rare, and physical possession removes the biggest auction risk. If it comes back at about ₹30–31 L, it's worth serious attention.
+- **Suryam Residency (#4):** two flats sold as one lot for ₹31 L works out to about ₹15.5 L per flat (about 470 sq ft built-up each). That's cheap, but you have to buy both flats. It suits you if you want to rent them out.
+- **The ₹2.7 Cr bungalow (#7):** it has already failed at auction once, which suggests buyers think it's overpriced or there's a problem with it. Wait for the next round.
+- **Piramal flat at ₹6 L (#10):** be careful. At that price in Katargam, the unit is probably very small, very old, or has a legal problem.
+- **Shops and offices (#6, #8, #12):** their value depends on the diamond business, which has been weak. Buy only if you'll use the space yourself or have a tenant lined up.
+
+## E. Where to check for new Katargam auctions (weekly)
+
+1. **BAANKNET:** https://baanknet.com. Covers all public-sector banks (SBI, BoB, BoI, Union, PNB, Canara)
 2. **FindAuction:** https://findauction.in/bank-property/katargam-surat
 3. **ICICI:** https://www.icicibank.com/about-us/auction-notices-properties
-4. **SBI notices:** https://sbi.bank.in/web/sbi-in-the-news/auction-notices/sarfaesi-and-others
-5. **Surat newspapers** (Gujarat Samachar, Sandesh, Divya Bhaskar, Times of India Surat). Banks must publish the sale notice at least 30 days before the auction.
-6. **DRT Ahmedabad** recovery-officer sales (DRT sales cover Surat too)
+4. **SBI:** https://sbi.bank.in/web/sbi-in-the-news/auction-notices/sarfaesi-and-others
+5. **HDFC / IDFC FIRST / Cholamandalam / Piramal:** each has an "auction notices" page on its own website
+6. **Newspapers:** Gujarat Samachar, Sandesh, Divya Bhaskar and Times of India (Surat edition). The law requires banks to publish the sale notice at least 30 days before the auction.
 
-It helps to also search nearby areas like **Ved Road, Dabholi, Singanpor, Fulpada, Amroli and Kosad**. Many notices use those names for properties that are really in Katargam.
+Also search the names of nearby areas: **Ved Road, Dabholi, Fulpada, Singanpor, Kuber Nagar, Gajera Circle, Amroli.**
 
-## 4. My view: is it worth it?
+## F. Key rules and risks
 
-**Yes, but only for some properties, and only if you check each one carefully.** Bank auctions in Surat usually sell **15% to 30% below market**, but the discount pays for real risks:
-
-- **Symbolic vs physical possession.** This is the biggest risk. With *symbolic* possession, the old owner may still live there, and getting them out through a DM/CMM order under Sec 14 can take 6 to 18 months. Prefer **physical possession** properties like the SBI 540 sq ft house.
-- **"As is where is, as is what is."** The bank gives no guarantee on title, area or condition, and you can't back out after you win.
-- **Hidden dues.** Unpaid society maintenance, SMC property tax, DGVCL electricity and water charges usually pass to the buyer. Get a written statement of dues before bidding.
-- **Tight payment deadlines.** You must pay 25% of the bid (including EMD) by the next working day and the remaining 75% within 15 days. If you miss the deadline, **you lose everything you paid.** Arrange your loan or money *before* you bid. Home loans on auction property are possible but slow, so get the bank to sanction the loan in principle first.
-- **Extra costs.** Gujarat stamp duty (about 4.9%) plus registration (1%) are charged on the sale price or the jantri value, whichever is higher. TDS of 1% (Sec 194-IA) applies if the price is ₹50 L or more. You may also have to pay the auction portal's fee.
-- **Borrower court cases.** Borrowers sometimes file a Sec 17 appeal at DRT to stop a sale. Ask the bank if any case is pending.
-
-**Katargam notes:** Katargam is an old, crowded area close to the diamond industry. Resale demand is steady, but many buildings are old, so check the building's age, its structural condition, and whether it has BU (building use) permission from SMC. Shops and offices here depend on how the diamond trade is doing.
-
-## 5. Checklist before you bid
-
-- [ ] Download the bank's sale notice and read the Terms & Conditions
-- [ ] Attend the inspection date and see the property yourself
-- [ ] Check the title: index copy, 7/12 or property card, and a 30-year title search by a lawyer (about ₹5k to ₹15k)
-- [ ] Confirm possession type (physical or symbolic) in writing
-- [ ] Get written dues from the society, SMC tax, DGVCL electricity and water
-- [ ] Check the SMC-approved plan and BU permission
-- [ ] Compare with market price: recent sale deeds or listings nearby, plus the jantri rate
-- [ ] Register on the e-auction portal (bankeauctions / BAANKNET / e-Procurement) early. KYC and a DSC can take a few days
-- [ ] Pay EMD by NEFT/RTGS before the deadline. Keep the UTR number
-- [ ] Set your **maximum bid** beforehand, including stamp duty, registration, dues and repair costs, and don't go above it during bidding
-- [ ] Have 25% of the bid ready for the next working day and the other 75% within 15 days
-
----
-
-*Sources: findauction.in, baanknet.com, eauctionsindia.com, cityair.in, bankauctiondeals.com, xpertarc.com, sbi.bank.in auction notices, foreclosureindia.com. Links for each listing are in `listings.csv`.*
+- **EMD:** usually 10% of the reserve price. It's refunded if you don't win.
+- **Payment:** if you win, you pay 25% of the bid (including the EMD) by the next working day and the other 75% within 15 days. **If you miss the deadline, you lose everything you've paid.**
+- **Possession:** buy only where the bank has **physical** possession, unless you're ready for a 6–18 month legal process to get the occupant out.
+- **"As is where is":** the bank gives no guarantee on the property's title, area or condition.
+- **Unpaid bills:** society maintenance, SMC property tax, electricity and water arrears usually become the buyer's to pay. Get written figures before you bid.
+- **Costs on top of the bid:** Gujarat stamp duty is about 4.9% and registration about 1%, calculated on the higher of the sale price and the jantri (government) rate. You also deduct 1% TDS if the price is ₹50 L or more.
+- **Due diligence:** hire a lawyer for a 30-year title search, and check the building's SMC-approved plan and occupancy (BU) permission.
