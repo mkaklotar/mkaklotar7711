@@ -1,6 +1,6 @@
 # Bank Auction Properties: Katargam, Surat
 
-Prepared: 25 Sep 2026. 22 properties. Spreadsheet version: [`listings.csv`](listings.csv).
+Prepared: 25 Sep 2026. 23 properties. Spreadsheet version: [`listings.csv`](listings.csv).
 
 > **How reliable this is.** The auction websites (FindAuction, BAANKNET, eAuctionsIndia, CityAir, BankAuctionDeals) were blocked from the environment used to make this list. So these details come from search-engine results for those pages and from bank PDF notices, not from reading the pages themselves. Each row has a **Confidence** rating. **Check every figure against the bank's official sale notice before you pay any EMD.**
 
@@ -46,6 +46,7 @@ If an auction gets no bids, the bank usually puts the property up again **within
 | 20 | – | Plot 36/A (54.23 sq.mt), **Sant Jalaram Soc, Ved Road** | Bank of India | – |
 | 21 | – | Plot 220 (40.15 sq.mt), **Rahi Township Vibhag-1** | Union Bank of India | – |
 | 22 | – | Flat, **Shantiniketan Apts, Sumul Dairy Road** | ACRE (ARC) | – |
+| 23 | – (older) | Plots F-15 & F-16 (53.14 sq.mt total), **Radheshyam Society**, TPS 18, FP 86 | Cholamandalam | – |
 
 Aggregators also list Katargam properties from **Axis Bank, Tata Capital Housing Finance, Svatantra Micro Housing Finance, ICICI (a plot)** and a **DRT** sale. I couldn't find details for these through search.
 
