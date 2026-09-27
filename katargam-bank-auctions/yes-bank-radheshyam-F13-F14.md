@@ -51,3 +51,23 @@ Source: Yes Bank sale notice dated 03-Sep-2026 (SARFAESI Rule 8(6) & 9(1)).
 | How to get it | Chola Surat branch (8th Floor, Velocity, TGB Road, Adajan); email CholaAuctionLAP@chola.murugappa.com; cholamandalam.com/news/auction-notices; auctionfocus.in/chola-lap; or a sub-registrar index search on F-15/F-16 |
 
 Note: the F-15/F-16 plots are a different size from F/13–F/14 (26.57 vs 32.24 sq.mt each), so they are probably separate units in the same row, not one shared structure. Confirm on site.
+
+## Checked against official documents (Auction Tiger auction ID 376192, downloaded 27-Sep-2026)
+Documents: bank sale notice (English + Gujarati), Financial Express notice 03-Sep-2026, Annexure II bid form + Annexure III declaration, auction page.
+
+| Point | What the documents say |
+|---|---|
+| Lot | ONE lot: F/13 + F/14 together, reserve ₹80,58,000, EMD ₹8,05,800 (auction brief says only "F/13", but the property details list both) |
+| **EMD mode** | **Demand Draft / Pay Order** from a scheduled bank, in favour of **"YES BANK LIMITED RB(A) AUCTION EMD COLLECTION A/C."**, payable at Surat. Put it in a **sealed envelope** with the bid form, KYC and photo ID, and deposit it at Yes Bank, 1st Floor, Orbit Tower, Sahara Darwaja, by **07-10-2026**. (Not NEFT/RTGS, which corrects the earlier note.) |
+| Bid rule | Bid must be **above** the reserve price. A bid below it is rejected **and the EMD is forfeited**. Increments are in multiples of **₹10,000** |
+| DSC | "Digital certificate required: No". Auction Tiger gives you a user ID and password after the bank accepts your documents |
+| 25% payment | Notice says within **48 hrs**; declaration form says within **24 hrs** of auction close, so plan for **24 hrs** |
+| 75% payment | Within 15 days of the bank confirming the sale; extendable only in writing at the officer's discretion |
+| EMD refund (if you lose) | Within 3 working days to the same account |
+| Possession | Newspaper notice: "**physical possession**". Bank's own notice (Eng/Guj): only "possession was taken", **without the word physical**. Get this confirmed in writing |
+| Encumbrance | "To the best of knowledge" of the bank's officer, no other encumbrance. You must check this yourself |
+| Dues/permissions | Bank takes no responsibility for society, SMC, electricity or water dues, transfer fees, NOCs or permissions. All of these go to the buyer |
+| Costs | Stamp duty, registration and GST (if any) are paid by the buyer. The sale certificate is issued in the bidder's name exactly as on the bid |
+| Bank's rights | The bank can reject any bid, cancel or adjourn the sale, or sell by private negotiation. Disputes go to DRT Ahmedabad |
+| Demand notice dates | 05-02-2026, 26-02-2026, 26-02-2026. Possession 12-07-2026 |
+| Officer on portal | Viral Sangani (Auction Tiger page); contact in notice: Vaibhavkumar Chaudhari 7990800344 |
