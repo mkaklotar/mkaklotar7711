@@ -39,3 +39,15 @@ Source: Yes Bank sale notice dated 03-Sep-2026 (SARFAESI Rule 8(6) & 9(1)).
 - By 6 Oct: send EMD by RTGS/NEFT and upload the bid form and KYC (don't leave it for the last day)
 - 08 Oct: bid (11:00–14:00)
 - After winning: pay 25% on time, then 75% within 15 days, then get the sale certificate registered, deposit TDS, take possession and transfer records
+
+## Adjacent plots F-15 & F-16: Cholamandalam listing (what's known)
+| Item | Detail |
+|---|---|
+| Property | Plot F-15 & F-16, Radheshyam Society, 26.57 sq.mt each (53.14 sq.mt total) + undivided share in road & margin land |
+| Land record | RS 499/500, TPS 18, FP 82 & 86 paiki Final Plot 86, Moje Katargam (same land parcel as F/13–F/14) |
+| Lender | Cholamandalam Investment & Finance Co. |
+| Listing | FindAuction ID 479468, probably from around 2022–23 |
+| Borrower, reserve, EMD, date, possession, outcome | **Not found.** The notice PDF and the auction pages are unreachable from this environment |
+| How to get it | Chola Surat branch (8th Floor, Velocity, TGB Road, Adajan); email CholaAuctionLAP@chola.murugappa.com; cholamandalam.com/news/auction-notices; auctionfocus.in/chola-lap; or a sub-registrar index search on F-15/F-16 |
+
+Note: the F-15/F-16 plots are a different size from F/13–F/14 (26.57 vs 32.24 sq.mt each), so they are probably separate units in the same row, not one shared structure. Confirm on site.
