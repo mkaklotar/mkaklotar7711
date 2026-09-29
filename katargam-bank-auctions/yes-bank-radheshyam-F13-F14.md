@@ -79,3 +79,11 @@ Documents: bank sale notice (English + Gujarati), Financial Express notice 03-Se
 - **No gate, not locked or sealed, open access**
 - Bank's possession notice was on the property but **had been torn off**
 - Follow-up email sent to the bank on 29-Sep-2026 asking it to secure the property, confirm in writing that it is responsible until handover, and share the panchnama and plan/BU copies
+
+## DRT cases found (DRT-2 Ahmedabad, checked by Mahesh on 30-Sep-2026)
+| Case | Filed | Petitioner → Respondent | Status | Next date |
+|---|---|---|---|---|
+| OA/864/2026 (Diary 1042/2026) | 14-05-2026 | Yes Bank → Janmangal Textiles + Asha, Gordhanbhai, Ghanshyambhai Maniya | Pending, Registrar, service & reply stage | 19-11-2026 |
+| OA/945/2026 (Diary 975/2026) | 05-05-2026 | Yes Bank → Sahjanand + Gordhanbhai (spelt "MANIVA"), Asha, Ghanshyambhai, Ilesh, Dinesh Maniya | Pending, Registrar, service & reply stage | 02-12-2026 |
+
+Both are the **bank's own recovery cases (OA)**. They don't stop the auction. The bank said on the phone that the **borrower** has filed a case and that the result is awaited around 5-Oct. That would be an **SA filed by the borrowers**, which **has not been found yet**. It may be at DRT-1, not yet numbered (diary stage only), filed under a variant spelling, or filed in the High Court instead. Ask the bank for the case number.
