@@ -71,3 +71,11 @@ Documents: bank sale notice (English + Gujarati), Financial Express notice 03-Se
 | Bank's rights | The bank can reject any bid, cancel or adjourn the sale, or sell by private negotiation. Disputes go to DRT Ahmedabad |
 | Demand notice dates | 05-02-2026, 26-02-2026, 26-02-2026. Possession 12-07-2026 |
 | Officer on portal | Viral Sangani (Auction Tiger page); contact in notice: Vaibhavkumar Chaudhari 7990800344 |
+
+## Site visit (28-Sep-2026, by Mahesh)
+- Vacant; nobody living there
+- One G+1 building over both plots F/13 + F/14; independent, with nothing shared with F/15–F/16
+- Construction quality good; flooring, wiring and main gate still pending
+- **No gate, not locked or sealed, open access**
+- Bank's possession notice was on the property but **had been torn off**
+- Follow-up email sent to the bank on 29-Sep-2026 asking it to secure the property, confirm in writing that it is responsible until handover, and share the panchnama and plan/BU copies
