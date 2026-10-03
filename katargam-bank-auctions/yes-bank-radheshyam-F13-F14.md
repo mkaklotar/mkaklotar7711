@@ -87,3 +87,14 @@ Documents: bank sale notice (English + Gujarati), Financial Express notice 03-Se
 | OA/945/2026 (Diary 975/2026) | 05-05-2026 | Yes Bank → Sahjanand + Gordhanbhai (spelt "MANIVA"), Asha, Ghanshyambhai, Ilesh, Dinesh Maniya | Pending, Registrar, service & reply stage | 02-12-2026 |
 
 Both are the **bank's own recovery cases (OA)**. They don't stop the auction. The bank said on the phone that the **borrower** has filed a case and that the result is awaited around 5-Oct. That would be an **SA filed by the borrowers**, which **has not been found yet**. It may be at DRT-1, not yet numbered (diary stage only), filed under a variant spelling, or filed in the High Court instead. Ask the bank for the case number.
+
+## Bank documents received (03-Oct-2026)
+- **Registered deed:** stamp "SRT/4/KTG" (Sub-Registrar Surat-4, Katargam), document no. **10173** (as read from photo), year **2013**. The stamp appears to read "ઘેરાણ દસ્તાવેજ" (mortgage deed), so this looks like the mortgage deed. Number and type to be confirmed by the advocate.
+- **Bank valuation report:**
+  - Area as per sale deed: 0. As per plan: 0. As per measurement: **3,962 sq ft built-up**.
+  - Land **1,178 sq ft × ₹7,200 = ₹84,81,600**. Construction valued at **₹0**.
+  - Reserve ₹80,58,000 ≈ 95% of this land-only value.
+- **Issues for the advocate:**
+  1. The construction appears to be unapproved ("as per plan: 0"). That's likely why it's valued at zero. Risks: regularisation cost, SMC action, no BU, home loan problems.
+  2. **Area mismatch:** sale notice says 2 × 32.24 sq.mt = 64.48 sq.mt ≈ 694 sq ft land; valuer says 1,178 sq ft land.
+  3. Built-up of 3,962 sq ft looks too high for G+1 on 694–1,178 sq ft. Is it more than two floors, or built beyond the plot boundary?
