@@ -98,3 +98,13 @@ Both are the **bank's own recovery cases (OA)**. They don't stop the auction. Th
   1. The construction appears to be unapproved ("as per plan: 0"). That's likely why it's valued at zero. Risks: regularisation cost, SMC action, no BU, home loan problems.
   2. **Area mismatch:** sale notice says 2 × 32.24 sq.mt = 64.48 sq.mt ≈ 694 sq ft land; valuer says 1,178 sq ft land.
   3. Built-up of 3,962 sq ft looks too high for G+1 on 694–1,178 sq ft. Is it more than two floors, or built beyond the plot boundary?
+
+## Borrowers' public caution notice (newspaper, seen 07-Oct-2026)
+- Issued by all 8 borrowers / guarantors (Janmangal, Sahjanand, Nyalkaran and the Maniya family).
+- They have challenged the bank's SARFAESI measures and the sale notice by filing **Securitisation Applications, Diary Nos. 2173, 2178 and 2189 of 2026**, under Sec 17, before **DRT-II Ahmedabad**. These are pending.
+- The notice warns bidders and buyers that anyone dealing with the properties does so "at their own risk", and that any transaction is subject to the final outcome of the DRT case.
+- The notice does **not** mention any stay order.
+- It also covers the Shukan Rivera flat and the Arjun Park plots.
+- Dates in the notice: demand notices 17-01-2026 and 26-02-2026; possession 12-07-2026; sale notice 01-09-2026.
+- Search on drt.gov.in using **Diary No.**, not Case No.
+- **Recommendation: do not bid in the 08-10-2026 round.**
