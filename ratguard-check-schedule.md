@@ -10,7 +10,7 @@ Directus (73 collections), Make, and the 4 existing scheduled tasks. All times I
 | # | Problem | Why it matters for scheduling |
 |---|---|---|
 | 1 | **n8n keeps only ~6.5 hours of execution history** (~9.5k runs, ~1,600/hour) | Any daily/weekly "did it error?" check is blind. Fix: keep error executions longer (e.g. `EXECUTIONS_DATA_SAVE_ON_SUCCESS=none` or a higher prune limit, or log errors to a Directus table from the Error Handler). |
-| 2 | **Meta daily check prompt is out of date** – it still describes the 6 Oct setup and rules that ended 13 Oct | It will keep judging old ads. Rewrite with the current ad list (#227 loser, #228/#238/#239 winners, #124 vs #234). |
+| 2 | ~~Meta daily check prompt is out of date~~ **DONE 14 Oct** – prompt now pulls all live ads automatically, has the 14 Oct change log (#227/#233/#214 paused, #240/#241 added) and updated rules | – |
 | 3 | **Ops Telegram already gets 80–150 msgs/day, only 35–40% acted on** | New checks must be **silent when OK** and send one summary, not more pings. |
 | 4 | **Long Code nodes crash the n8n task runner** (Lead Dedupe ~2.5 min/15 min, Guardrail ~6 min/hour) | Causes random collateral failures that every check will report as noise. |
 | 5 | "Blog auto-publish check" and two reminders are **bound to Claude Desktop (Windows)** | They only run if the PC/app is on. Move to cloud tasks. |
@@ -30,7 +30,7 @@ Directus (73 collections), Make, and the 4 existing scheduled tasks. All times I
 
 | ID | Time | Task | What to check | Owner to act |
 |---|---|---|---|---|
-| D1 | 08:00 | **Meta ads daily check** (EXISTS – update prompt first) | Yesterday / 7d ROAS vs prior 7d, A+SC vs CBO, new-ad winners/losers, human changes in last 24 h, disapprovals. Rules: target ROAS 4.5, budget ±20% max per 72 h, pause new ad at ≥₹2,500 & ≤1 purchase | Mahesh |
+| D1 | 08:00 | **Meta ads daily check** (EXISTS – prompt updated 14 Oct) | Yesterday / 7d ROAS vs prior 7d, A+SC vs CBO, new-ad winners/losers, human changes in last 24 h, disapprovals. Rules: target ROAS 4.5, budget ±20% max per 72 h, pause new ad at ≥₹2,500 & ≤1 purchase | Mahesh |
 | D2 | 09:30 | **Morning order-pipeline brief** (NEW) | Yesterday orders (Shopify, COD vs prepaid); unconfirmed COD >24 h; confirmed but unbooked >24 h (`ROUTE_STALLED`, `NO_COURIER`); **paid but not shipped**; double-ship alerts; open exceptions board count; prepaid payment failures from yesterday (retry list) | Delivery Desk |
 | D3 | 10:45 | **India Post cut-off check** (NEW) | 10:30 sheet built & upload file ready; orders tagged India Post still unbooked; barcode pool (re-order if <150) | Rutvik / desk |
 | D4 | 13:15 | **Maruti cut-off check** (NEW) | 13:00 manifest done, AWB writeback filled, Maruti pincode list age (alert at 40 days, before the 45-day stale alert), COD orders whose pincode left the list (no automatic path exists) | Desk |
