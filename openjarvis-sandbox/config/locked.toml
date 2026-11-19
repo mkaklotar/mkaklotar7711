@@ -1,0 +1,42 @@
+# OpenJarvis sandbox config -- LOCKED mode (default).
+# Chat and read-only tools work. Shell, code execution, file writes, network
+# fetches, channels, scheduling and admin tools are denied by capability policy.
+# Lives in the image's read-only filesystem: the agent cannot edit it.
+
+[engine]
+default = "ollama"
+
+[engine.ollama]
+host = "http://ollama:11434"
+
+[intelligence]
+default_model = "qwen3:1.7b"
+
+[agent]
+default_agent = "simple"
+
+[security]
+enabled = true
+profile = "shared"                 # personal profile leaves RBAC off; shared turns it on
+mode = "redact"
+scan_input = true
+scan_output = true
+secret_scanner = true
+pii_scanner = true
+enforce_tool_confirmation = true
+ssrf_protection = true
+local_engine_bypass = false
+local_tool_bypass = false
+allowed_dirs = ["/home/jarvis/workspace"]
+
+[security.capabilities]
+enabled = true
+default_deny = true
+policy_path = "/etc/openjarvis/policy-locked.json"
+
+[analytics]
+enabled = false                    # no PostHog usage events
+choice_recorded = true             # and never prompt (that prompt defaults to "yes")
+
+[sandbox]
+enabled = false                    # the container IS the sandbox; never mount docker.sock

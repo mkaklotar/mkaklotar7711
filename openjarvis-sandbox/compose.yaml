@@ -1,0 +1,101 @@
+# Offline test sandbox for OpenJarvis. See README.md for the full workflow.
+#
+#   sandbox  internal network: no internet, no published ports. jarvis + ollama.
+#   egress   normal network, used ONLY by the two one-shot setup services.
+name: oj-sandbox
+
+x-hardening: &hardening
+  read_only: true
+  cap_drop: [ALL]
+  security_opt: ["no-new-privileges:true"]
+  pids_limit: 256
+  tmpfs:
+    - /tmp:size=512m,mode=1777
+
+services:
+  ollama:
+    image: ollama/ollama:0.12.6
+    networks: [sandbox]          # no internet at run time
+    volumes:
+      - models:/root/.ollama
+    environment:
+      OLLAMA_HOST: 0.0.0.0:11434 # reachable on the sandbox network only
+    mem_limit: 6g
+    cpus: 4
+    # no `ports:` -- the Ollama API is never exposed to your machine
+
+  jarvis:
+    build: .
+    image: oj-sandbox-jarvis:427c2dd
+    <<: *hardening
+    user: "10001:10001"
+    networks: [sandbox]
+    depends_on: [ollama]
+    volumes:
+      - jarvis-state:/home/jarvis/.openjarvis   # traces, memory, skills
+      - workspace:/home/jarvis/workspace        # the only file:read/write dir
+      # Some OpenJarvis commands honor OPENJARVIS_CONFIG and some read the
+      # default path, so pin the same hardened file read-only at both.
+      - ./config/${OJ_MODE:-locked}.toml:/home/jarvis/.openjarvis/config.toml:ro
+    environment:
+      # locked (default): no code execution, no file writes.
+      # exec: allows shell + file writes, still offline and contained.
+      OPENJARVIS_CONFIG: /etc/openjarvis/${OJ_MODE:-locked}.toml
+      OJ_PROBE_HOST_PORTS: ${OJ_PROBE_HOST_PORTS:-11434,8000,8080,3000,5000}
+    mem_limit: 3g
+    cpus: 2
+    stdin_open: true
+    tty: true
+
+  # ---- optional: deterministic end-to-end check (see README) ----------------
+  ollama-fake:
+    image: oj-sandbox-jarvis:427c2dd
+    profiles: [e2e]
+    <<: *hardening
+    user: "10001:10001"
+    networks:
+      sandbox:
+        aliases: [ollama]        # stands in for Ollama; stop the real one first
+    entrypoint: ["/opt/oj/bin/python", "-I", "/opt/oj-sandbox/probes/fake_ollama.py"]
+
+  # ---- one-shot setup services (have internet; never run a model or agent) --
+
+  ollama-pull:
+    image: ollama/ollama:0.12.6
+    profiles: [setup]
+    networks: [egress]
+    volumes:
+      - models:/root/.ollama
+    entrypoint: ["/bin/sh", "-c"]
+    command:
+      - ollama serve >/dev/null 2>&1 & sleep 3 && ollama pull "${OJ_MODEL:-qwen3:1.7b}"
+
+  skill-fetch:
+    image: oj-sandbox-jarvis:427c2dd
+    profiles: [fetch]
+    <<: *hardening
+    user: "10001:10001"
+    networks: [egress]
+    volumes:
+      - jarvis-state:/home/jarvis/.openjarvis
+      - ./config/locked.toml:/home/jarvis/.openjarvis/config.toml:ro
+    environment:
+      OPENJARVIS_CONFIG: /etc/openjarvis/locked.toml
+    # No --yes-dangerous and no --with-scripts: refuse anything that declares
+    # shell/network-listen/fs-write, and never copy executable scripts.
+    entrypoint: ["/opt/oj/bin/jarvis", "skill", "install"]
+
+networks:
+  sandbox:
+    internal: true
+    driver_opts:
+      # Without this the host keeps an address on this bridge, and anything
+      # on your machine listening on 0.0.0.0 is reachable from the sandbox.
+      # Needs Docker Engine 28+. The containment probe checks it either way.
+      com.docker.network.bridge.gateway_mode_ipv4: isolated
+  egress: {}
+
+volumes:
+  models:
+  jarvis-state:
+  workspace:
