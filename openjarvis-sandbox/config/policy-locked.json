@@ -1,0 +1,16 @@
+{
+  "agents": [
+    {
+      "agent_id": "_default",
+      "grants": [
+        {"capability": "file:read"},
+        {"capability": "memory:read"},
+        {"capability": "memory:write"}
+      ],
+      "deny": [
+        "code:execute", "file:write", "network:fetch", "channel:send",
+        "schedule:create", "system:admin", "tool:invoke"
+      ]
+    }
+  ]
+}
